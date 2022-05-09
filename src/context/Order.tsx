@@ -1,14 +1,7 @@
 import React, { createContext, useState } from 'react'
-
-interface IItem {
-  id: string
-  title: string
-  price: number
-  image: string
-  category: string
-}
-
+import { IItem } from '../Interfaces'
 interface OrderContextData {
+  children: JSX.Element
   cartItems: IItem[]
   add: (item: IItem) => void
   remove: (item: IItem) => void
@@ -34,7 +27,8 @@ const OrderProvider: React.FC<OrderContextData> = ({ children }) => {
       value={{
         cartItems: items,
         remove,
-        add
+        add,
+        children
       }}
     >
       {children}

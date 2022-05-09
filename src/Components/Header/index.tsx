@@ -7,14 +7,13 @@ import * as Styled from './styles'
 
 const logoVariants: Variants = {
   hidden: {
-    scale: 0
+    opacity: 0
   },
   visible: {
-    scale: 1,
+    opacity: 1,
     transition: {
       type: 'spring',
-      stiffness: 180,
-      duration: 0.5
+      stiffness: 90
     }
   }
 }

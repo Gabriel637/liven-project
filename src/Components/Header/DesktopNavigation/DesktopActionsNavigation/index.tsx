@@ -58,7 +58,7 @@ const DesktopActionsNavigation: React.FC = () => {
           router.push('/cart')
         }}
       >
-        {cartItems.length > 0 && (
+        {cartItems && cartItems.length > 0 && (
           <Styled.Counter>{cartItems.length}</Styled.Counter>
         )}
         <AiOutlineShopping size="3.6rem" />

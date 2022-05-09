@@ -743,6 +743,11 @@
     "@testing-library/dom" "^8.5.0"
     "@types/react-dom" "^18.0.0"
 
+"@testing-library/user-event@^14.1.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@testing-library/user-event/-/user-event-14.1.1.tgz#e1ff6118896e4b22af31e5ea2f9da956adde23d8"
+  integrity sha512-XrjH/iEUqNl9lF2HX9YhPNV7Amntkcnpw0Bo1KkRzowNDcgSN9i0nm4Q8Oi5wupgdfPaJNMAWa61A+voD6Kmwg==
+
 "@tootallnate/once@2":
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/@tootallnate/once/-/once-2.0.0.tgz#f544a148d3ab35801c1f633a7441fd87c2e484bf"
@@ -956,19 +961,10 @@
   dependencies:
     react-icons "*"
 
-"@types/react@*":
+"@types/react@*", "@types/react@^18.0.9":
   version "18.0.9"
   resolved "https://registry.yarnpkg.com/@types/react/-/react-18.0.9.tgz#d6712a38bd6cd83469603e7359511126f122e878"
   integrity sha512-9bjbg1hJHUm4De19L1cHiW0Jvx3geel6Qczhjd0qY5VKVE2X5+x77YxAepuCwVh4vrgZJdgEJw48zrhRIeF4Nw==
-  dependencies:
-    "@types/prop-types" "*"
-    "@types/scheduler" "*"
-    csstype "^3.0.2"
-
-"@types/react@^16.9.46":
-  version "16.14.26"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.14.26.tgz#82540a240ba7207ebe87d9579051bc19c9ef7605"
-  integrity sha512-c/5CYyciOO4XdFcNhZW1O2woVx86k4T+DO2RorHZL7EhitkNQgSD/SgpdZJAUJa/qjVgOmTM44gHkAdZSXeQuQ==
   dependencies:
     "@types/prop-types" "*"
     "@types/scheduler" "*"

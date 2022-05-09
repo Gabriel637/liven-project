@@ -2,7 +2,6 @@ import { Variants } from 'framer-motion'
 import { AiFillStar } from 'react-icons/ai'
 import * as Styled from './styles'
 interface CardProps {
-  key: string
   name: string
   price: number
   image: string
@@ -11,7 +10,6 @@ interface CardProps {
 }
 
 const Card: React.FC<CardProps> = ({
-  key,
   name,
   price,
   image,
@@ -35,7 +33,6 @@ const Card: React.FC<CardProps> = ({
       variants={menuVariants}
       initial="hidden"
       animate="visible"
-      key={key}
     >
       <Styled.ProductPic src={image} />
       <Styled.Name>{name.split(' ').slice(0, 3).join(' ')}</Styled.Name>

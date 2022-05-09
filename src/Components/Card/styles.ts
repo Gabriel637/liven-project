@@ -17,7 +17,7 @@ export const ProductPic = styled.img`
   width: 150px;
   border-radius: 5px;
   align-self: center;
-  background-color: ${props => props.theme.colors.background}; ;
+  background-color: ${props => props.theme.colors.background};
 `
 
 export const Name = styled.h3`
